@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+<LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/background"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/text"
@@ -15,62 +20,54 @@
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/historyButton"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/text"
-        android:layout_margin="12dp"
-        android:background="@color/colorPrimary"
-        android:text="история" />
-
-    <Button
-        android:id="@+id/artButoon"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="12dp"
-        android:background="@color/colorPrimary"
-        android:text="искусство" />
-
-    <Button
         android:id="@+id/sportButton"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_below="@id/text"
         android:layout_margin="12dp"
         android:background="@color/colorPrimary"
-        android:text="Спорт"
-        android:onClick="sportsButton"/>
+        android:onClick="sportsButton"
+        android:text="@string/sport" />
+
+    <Button
+        android:id="@+id/artButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sportButton"
+        android:layout_margin="12dp"
+        android:background="@color/colorPrimary"
+        android:onClick="artButton"
+        android:text="@string/art" />
+
+    <Button
+        android:id="@+id/historyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artButton"
+        android:layout_margin="12dp"
+        android:background="@color/colorPrimary"
+        android:onClick="historyButton"
+        android:text="@string/history" />
 
     <Button
         android:id="@+id/entertaimentButton"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/historyButton"
         android:layout_margin="12dp"
         android:background="@color/colorPrimary"
-        android:text="развлечения" />
+        android:onClick="entertaimentButton"
+        android:text="@string/entertaiment" />
 
     <Button
         android:id="@+id/architectureButton"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/sportButton"
+        android:layout_below="@id/entertaimentButton"
         android:layout_margin="12dp"
         android:background="@color/colorPrimary"
-        android:text="архитектура" />
+        android:onClick="architectureButton"
+        android:text="@string/architecture" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/entertaimentButton"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/image2" />
-</RelativeLayout>
+</LinearLayout>
+</ScrollView>

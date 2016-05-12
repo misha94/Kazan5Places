@@ -2,4 +2,12 @@
     <string name="app_name">Kazan5Places</string>
     <string name="about"></string>
     <string name="startButton">Начать</string>
+    <string name="sport">Спорт</string>
+    <string name="art">искусство</string>
+    <string name="history">история</string>
+    <string name="entertaiment">развлечения</string>
+    <string name="architecture">архитектура</string>
+    <string name="open">Открыть Описание</string>
+    <string name="close">Скрыть описание</string>
+    <string name="enter_name">Введите своё имя</string>
 </resources>

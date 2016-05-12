@@ -17,6 +17,10 @@
         </activity>
         <activity android:name=".SecondActivity"></activity>
         <activity android:name=".SportsActivity"></activity>
+        <activity android:name=".ArtActivity"></activity>
+        <activity android:name=".HistoryActivity"></activity>
+        <activity android:name=".EntertainmentActivity"></activity>
+        <activity android:name=".ArchitectureActivity"></activity>
     </application>
 
 </manifest>

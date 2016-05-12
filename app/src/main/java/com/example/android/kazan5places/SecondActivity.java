@@ -1,6 +1,5 @@
 package com.example.android.kazan5places;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,6 +22,23 @@ public class SecondActivity extends AppCompatActivity {
     }
     public void sportsButton (View view) {
         Intent intent = new Intent(SecondActivity.this, SportsActivity.class);
+        startActivity(intent);
+
+    }
+    public void historyButton (View view) {
+        Intent intent = new Intent(SecondActivity.this, HistoryActivity.class);
+        startActivity(intent);
+    }
+    public void entertaimentButton (View view) {
+        Intent intent = new Intent(SecondActivity.this, EntertainmentActivity.class);
+        startActivity(intent);
+    }
+    public void architectureButton (View view) {
+        Intent intent = new Intent(SecondActivity.this, ArchitectureActivity.class);
+        startActivity(intent);
+    }
+    public void artButton (View view) {
+        Intent intent = new Intent(SecondActivity.this, ArtActivity.class);
         startActivity(intent);
     }
 }
