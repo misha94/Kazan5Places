@@ -20,6 +20,11 @@ public class SecondActivity extends AppCompatActivity {
         textView.setText(name + ", " + getText(R.string.second_text));
 
     }
+
+    /**
+     * Эти методы отвечают за нажатие кнопок и после нажатия переходят на страничку, которую выбрад пользователь
+     *
+     */
     public void sportsButton (View view) {
         Intent intent = new Intent(SecondActivity.this, SportsActivity.class);
         startActivity(intent);

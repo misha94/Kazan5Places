@@ -21,6 +21,10 @@ public class ArtActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        /**
+         * Заполнение текстом и картинками готового XML шаблона
+         */
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sports_activity);
 
@@ -58,6 +62,11 @@ public class ArtActivity extends AppCompatActivity {
         ImageView ImageView5 = (ImageView) findViewById(R.id.image_view_5);
         ImageView5.setImageResource(R.drawable.kazan_teatr);
     }
+
+    /**
+     * Методы вызываются, когда происходит нажатие на кнопки и показывается информация, при повторном нажатия информация исчезает
+     */
+
     public void button1(View view) {
         if (view1) {
 

@@ -16,6 +16,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
+
+    /**
+     * Метод вызывается при нажатии на кнопку "начать", при этом проверяется ввёл ли пользователь своё имя, если поле ввода осталось пустым -
+     * выскакивает уведомление
+     */
+
     public void startButton (View view) {
 
         EditText textEditable = (EditText) findViewById(R.id.edit_text);

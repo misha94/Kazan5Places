@@ -24,6 +24,10 @@ public class SportsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sports_activity);
 
+        /**
+         * Заполнение текстом и картинками готового XML шаблона
+         */
+
         TextView header = (TextView) findViewById(R.id.header);
         header.setText("Спортивные объекты");
 
@@ -57,6 +61,10 @@ public class SportsActivity extends AppCompatActivity {
         ImageView ImageView5 = (ImageView) findViewById(R.id.image_view_5);
         ImageView5.setImageResource(R.drawable.water);
     }
+
+    /**
+     * Методы вызываются, когда происходит нажатие на кнопки и показывается информация, при повторном нажатия информация исчезает
+     */
 
     public void button1(View view) {
         if (view1) {
